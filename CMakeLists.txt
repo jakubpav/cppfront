@@ -33,7 +33,7 @@ set_target_properties(
     OUTPUT_NAME cppfront
     EXPORT_NAME cppfront
 )
-target_compile_features(cppfront_cppfront PRIVATE cxx_std_20)
+target_compile_features(cppfront_cppfront PRIVATE cxx_std_23)
 target_sources(
     cppfront_cppfront
     PRIVATE
@@ -54,7 +54,7 @@ add_library(cppfront_cpp2util INTERFACE)
 add_library(cppfront::cpp2util ALIAS cppfront_cpp2util)
 set_target_properties(cppfront_cpp2util PROPERTIES EXPORT_NAME cpp2util)
 
-target_compile_features(cppfront_cpp2util INTERFACE cxx_std_20)
+target_compile_features(cppfront_cpp2util INTERFACE cxx_std_23)
 target_sources(
     cppfront_cpp2util
     INTERFACE
